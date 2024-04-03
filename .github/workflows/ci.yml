@@ -43,10 +43,9 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          minor-wording: 'add,Adds,new'
-          major-wording: 'MAJOR,cut-major'
-          patch-wording: 'patch,fixes'     # Providing patch-wording will override commits
-          # defaulting to a patch bump.
+          minor-wording: 'feat,Adds,minor'
+          major-wording: 'BREAKING CHANGE,remove,Removes,major'
+          patch-wording: 'fix,Fixes,bugfix'
           rc-wording: 'RELEASE,alpha'
           tag-prefix: 'v'
           commit-message: 'chore(release): Bump version to {{version}}'
@@ -54,8 +53,13 @@ jobs:
       - name: 🚀 Publish to NPM
         run: |
           echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" >> ~/.npmrc &&
-          bun run changelogen --canary nightly --publish
+          npm publish --provenance
 
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           NPM_CONFIG_PROVENANCE: true
+
+      - name: 🚢 GitHub Release
+        run: npx changelogen@latest gh release
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
