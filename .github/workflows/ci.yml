@@ -60,6 +60,4 @@ jobs:
           NPM_CONFIG_PROVENANCE: true
 
       - name: 🚢 GitHub Release
-        run: npx changelogen@latest gh release
-        with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npx changelogen@latest gh release --token ${{ secrets.GITHUB_TOKEN }}
