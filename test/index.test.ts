@@ -1,4 +1,4 @@
-import { expect, it } from 'vitest'
+import { it, expect } from 'bun:test'
 import { main, waitFor } from './index'
 
 it('prints \'Hello, world!\'', (): void => {

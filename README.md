@@ -2,9 +2,9 @@
 
 <!-- automd:badges color=black license provider=shields -->
 
-[![npm version](https://img.shields.io/npm/v/cli-starter?color=black)](https://npmjs.com/package/cli-starter)
-[![npm downloads](https://img.shields.io/npm/dm/cli-starter?color=black)](https://npmjs.com/package/cli-starter)
-[![license](https://img.shields.io/github/license/HugoRCD/cli-starter?color=black)](https://github.com/HugoRCD/cli-starter/blob/main/LICENSE)
+[![npm version](https://img.shields.io/npm/v/@hrcd/cli-starter?color=black)](https://npmjs.com/package/cli-starter)
+[![npm downloads](https://img.shields.io/npm/dm/@hrcd/cli-starter?color=black)](https://npmjs.com/package/cli-starter)
+[![license](https://img.shields.io/github/license/HugoRCD/@hrcd/cli-starter?color=black)](https://github.com/HugoRCD/@hrcd/cli-starter/blob/main/LICENSE)
 
 <!-- /automd -->
 
@@ -18,26 +18,26 @@ Install package:
 
 ```sh
 # ✨ Auto-detect
-npx nypm install cli-starter
+npx nypm install @hrcd/cli-starter
 
 # npm
-npm install cli-starter
+npm install @hrcd/cli-starter
 
 # yarn
-yarn add cli-starter
+yarn add @hrcd/cli-starter
 
 # pnpm
-pnpm install cli-starter
+pnpm install @hrcd/cli-starter
 
 # bun
-bun install cli-starter
+bun install @hrcd/cli-starter
 ```
 
 <!-- /automd -->
 
 ## Development
 
-Before you start, you can use the `./scripts/rename.sh` script to rename all `cli-starter` occurrences in the repository to your new repository name.
+Before you start, you can use the `./scripts/rename.sh` script to rename all `@hrcd/cli-starter` occurrences in the repository to your new repository name.
 
 <!-- automd:fetch url="gh:hugorcd/markdown/main/src/local_development.md" -->
 
@@ -72,11 +72,11 @@ To start contributing, you can follow these steps:
 
 <!-- automd:contributors license=Apache author=HugoRCD-->
 
-Published under the [APACHE](https://github.com/HugoRCD/cli-starter/blob/main/LICENSE) license.
-Made by [@HugoRCD](https://github.com/HugoRCD) and [community](https://github.com/HugoRCD/cli-starter/graphs/contributors) 💛
+Published under the [APACHE](https://github.com/HugoRCD/@hrcd/cli-starter/blob/main/LICENSE) license.
+Made by [@HugoRCD](https://github.com/HugoRCD) and [community](https://github.com/HugoRCD/@hrcd/cli-starter/graphs/contributors) 💛
 <br><br>
-<a href="https://github.com/HugoRCD/cli-starter/graphs/contributors">
-<img src="https://contrib.rocks/image?repo=HugoRCD/cli-starter" />
+<a href="https://github.com/HugoRCD/@hrcd/cli-starter/graphs/contributors">
+<img src="https://contrib.rocks/image?repo=HugoRCD/@hrcd/cli-starter" />
 </a>
 
 <!-- /automd -->
