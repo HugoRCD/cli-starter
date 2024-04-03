@@ -1,5 +1,5 @@
 {
-  "name": "@hrcd/cli-starter",
+  "name": "hrcd-cli-starter",
   "version": "0.0.3",
   "type": "module",
   "description": "default repository for HugoRCD",

@@ -8,16 +8,12 @@ on:
     branches:
       - main
 
-permissions:
-  contents: read
-  id-token: write
-
 jobs:
   ci:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node: [16, 18, 20]
+    permissions:
+      contents: read
+      id-token: write
 
     steps:
       - uses: actions/checkout@v4
@@ -38,7 +34,6 @@ jobs:
         run: bun run test
 
       - name: 🚀 Publish to NPM
-        if: matrix.node == 20
         run: |
           echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" >> ~/.npmrc &&
           bun changelogen --canary nightly --publish
