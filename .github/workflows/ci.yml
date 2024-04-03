@@ -30,7 +30,7 @@ jobs:
       - name: nightly release
         run: |
           echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" >> ~/.npmrc &&
-          bunx changelogen --publish
+          bunx changelogen --publish --provenance
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           NPM_CONFIG_PROVENANCE: true
