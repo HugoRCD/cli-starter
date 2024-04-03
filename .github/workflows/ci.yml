@@ -32,10 +32,9 @@ jobs:
 
       - name: 🚀 Publish to NPM
         run: |
-          git config --global user.name "${{ env.CI_COMMIT_AUTHOR }}"
-          git config --global user.email "hugo.richard@epitech.eu"
           echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" >> ~/.npmrc &&
-          bun changelogen --release --push --publish
+          bun changelogen --canary nightly --publish
+
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
