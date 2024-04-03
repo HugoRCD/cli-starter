@@ -33,12 +33,14 @@ jobs:
       - name: 🧪 Run tests
         run: bun run test
 
+      - name: 🤖 Build
+        run: bun run build
+
       - name: 🚀 Publish to NPM
         run: |
           echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" >> ~/.npmrc &&
-          bun changelogen --canary nightly --publish
+          bun run changelogen --canary nightly --publish
 
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           NPM_CONFIG_PROVENANCE: true
