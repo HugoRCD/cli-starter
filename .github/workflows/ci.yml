@@ -28,11 +28,6 @@ jobs:
         run: bun run test
 
       - name: nightly release
-        if: |
-          github.event_name == 'push' &&
-          matrix.node == 20 &&
-          !contains(github.event.head_commit.message, '[skip-release]') &&
-          !startsWith(github.event.head_commit.message, 'docs')
         run: |
           echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" >> ~/.npmrc &&
           npx changelogen --canary nightly --publish
