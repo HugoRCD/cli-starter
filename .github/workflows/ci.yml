@@ -43,7 +43,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          minor-wording: 'feat,Adds,minor'
+          minor-wording: 'feat,Adds,minor,add'
           major-wording: 'BREAKING CHANGE,remove,Removes,major'
           patch-wording: 'fix,Fixes,bugfix'
           rc-wording: 'RELEASE,alpha'
