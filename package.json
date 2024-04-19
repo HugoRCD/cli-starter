@@ -29,15 +29,15 @@
     "consola": "^3.2.3"
   },
   "devDependencies": {
-    "@commitlint/cli": "^19.2.1",
-    "@commitlint/config-conventional": "^19.1.0",
+    "@commitlint/cli": "^19.2.2",
+    "@commitlint/config-conventional": "^19.2.2",
     "@fig/complete-commander": "^3.0.0",
-    "@hrcd/eslint-config": "^0.0.2",
-    "@types/bun": "^1.0.12",
+    "@hrcd/eslint-config": "^0.0.3",
+    "@types/bun": "^1.1.0",
     "automd": "^0.3.7",
     "changelogen": "^0.5.5",
     "eslint": "^8.57.0",
-    "typescript": "^5.4.3"
+    "typescript": "^5.4.5"
   },
   "commitlint": {
     "extends": [
