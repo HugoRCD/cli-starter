@@ -29,8 +29,8 @@
     "consola": "^3.2.3"
   },
   "devDependencies": {
-    "@commitlint/cli": "^19.4.0",
-    "@commitlint/config-conventional": "^19.2.2",
+    "@commitlint/cli": "^19.4.1",
+    "@commitlint/config-conventional": "^19.4.1",
     "@fig/complete-commander": "^3.2.0",
     "@hrcd/eslint-config": "^0.0.3",
     "@types/bun": "^1.1.8",
