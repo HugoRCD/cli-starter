@@ -2,9 +2,9 @@
 
 <!-- automd:badges color=black license provider=shields -->
 
-[![npm version](https://img.shields.io/npm/v/@hrcd/cli-starter?color=black)](https://npmjs.com/package/cli-starter)
-[![npm downloads](https://img.shields.io/npm/dm/@hrcd/cli-starter?color=black)](https://npmjs.com/package/cli-starter)
-[![license](https://img.shields.io/github/license/HugoRCD/@hrcd/cli-starter?color=black)](https://github.com/HugoRCD/@hrcd/cli-starter/blob/main/LICENSE)
+[![npm version](https://img.shields.io/npm/v/@hrcd/cli-starter?color=black)](https://npmjs.com/package/@hrcd/cli-starter)
+[![npm downloads](https://img.shields.io/npm/dm/@hrcd/cli-starter?color=black)](https://npmjs.com/package/@hrcd/cli-starter)
+[![license](https://img.shields.io/github/license/HugoRCD/cli-starter?color=black)](https://github.com/HugoRCD/cli-starter/blob/main/LICENSE)
 
 <!-- /automd -->
 
@@ -41,12 +41,7 @@ Before you start, you can use the `./scripts/rename.sh` script to rename all `@h
 
 <!-- automd:fetch url="gh:hugorcd/markdown/main/src/local_development.md" -->
 
-### Local development
-
-- Clone this repository
-- Install latest LTS version of [Node.js](https://nodejs.org/en/)
-- Enable [Corepack](https://github.com/nodejs/corepack) using `corepack enable`
-- Install dependencies using `bun install`
+<!-- ⚠️  (fetch) [GET] "https://raw.githubusercontent.com/hugorcd/markdown/main/src/local_development.md": 404 Not Found -->
 
 <!-- /automd -->
 
@@ -60,7 +55,7 @@ To start contributing, you can follow these steps:
 3. Create a branch using conventional commits and the issue number as the branch name. For example, `feat/123` or `fix/456`.
 4. Make changes following the local development steps.
 5. Commit your changes following the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) specification.
-6. If your changes affect the code, run tests using `bun run test`.
+6. If your changes affect the code, run tests using `pnpm run test`.
 7. Create a pull request following the [Pull Request Template](https://github.com/HugoRCD/markdown/blob/main/src/pull_request_template.md).
    - To be merged, the pull request must pass the tests/workflow and have at least one approval.
    - If your changes affect the documentation, make sure to update it.
@@ -72,11 +67,11 @@ To start contributing, you can follow these steps:
 
 <!-- automd:contributors license=Apache author=HugoRCD-->
 
-Published under the [APACHE](https://github.com/HugoRCD/@hrcd/cli-starter/blob/main/LICENSE) license.
-Made by [@HugoRCD](https://github.com/HugoRCD) and [community](https://github.com/HugoRCD/@hrcd/cli-starter/graphs/contributors) 💛
+Published under the [APACHE](https://github.com/HugoRCD/cli-starter/blob/main/LICENSE) license.
+Made by [@HugoRCD](https://github.com/HugoRCD) and [community](https://github.com/HugoRCD/cli-starter/graphs/contributors) 💛
 <br><br>
-<a href="https://github.com/HugoRCD/@hrcd/cli-starter/graphs/contributors">
-<img src="https://contrib.rocks/image?repo=HugoRCD/@hrcd/cli-starter" />
+<a href="https://github.com/HugoRCD/cli-starter/graphs/contributors">
+<img src="https://contrib.rocks/image?repo=HugoRCD/cli-starter" />
 </a>
 
 <!-- /automd -->
@@ -85,6 +80,6 @@ Made by [@HugoRCD](https://github.com/HugoRCD) and [community](https://github.co
 
 ---
 
-_🤖 auto updated with [automd](https://automd.unjs.io) (last updated: Sun Mar 31 2024)_
+_🤖 auto updated with [automd](https://automd.unjs.io) (last updated: Sat May 23 2026)_
 
 <!-- /automd -->
